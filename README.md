@@ -25,7 +25,7 @@ change datasource.username and datasource.password as per your MYSQL installatio
 
 ```bash
 mvn package
-java -jar target/EmployeeDataService-0.0.1-SNAPSHOT.jar
+java -jar target/mykart-user-service 0.0.1-SNAPSHOT.jar
 ```
 Alternatively, you can run the app without packaging it using -
 
