@@ -8,9 +8,9 @@
 https://github.com/AnujaHaranePersistent/mykart-user-service.git
 ```
 
-### 2. Create Postgres database
+### 2. Create MYSQL database
 ```bash
-create database mykart-data
+Execute database schema from /DB-Schema/schema.sql
 ```
 
 ### 3. Change MYSQL username and password as per your installation
@@ -39,27 +39,22 @@ The app will start running at http://localhost:5050.
 
 The app defines following CRUD APIs.
 
+For User:
+
 ```bash
-POST /login                   -   to authenticate user and generate token
 
-GET /login/{user_id}          -   to get username and password of given identifier
+POST /v1/users/register                -   to register user 
 
-GET /api/v1/user/             -   to get list of Users
+POST /v1/users/login                   -   to authenticate user and generate token
 
-POST /api/v1/user             -   to post user data to server
+PUT /v1/users/update/{user_id}         -   to update user with given identifier
 
-GET /api/v1/user/{user_id}    -   to get user with given identifier
-
-PUT /api/v1/user/{user_id}    -   to update user with given identifier
-
-DELETE /api/v1/user/{user_id}  -   to delete employee with given identifier
+DELETE /v1/users/delete/{user_id}      -   to delete user with given identifier
 
 
 ```
 
-## To run Tests
- Type ``` mvn test ``` 
- from the root directory of the project to run the tests. 
+
  
 
 
