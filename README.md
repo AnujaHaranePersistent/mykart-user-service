@@ -59,7 +59,7 @@ For Cart:
 
 POST /v1/users/{user_id}/cart                -   to add items to cart 
 
-GET /v1/users/{user_id}/cart/{item_id}       -   to get sprcific item from cart
+GET /v1/users/{user_id}/cart/{item_id}       -   to get specific item from cart
 
 PUT /v1/users/{user_id}/cart/update/{item_id}         -   to update quantity of item with given identifier
 
