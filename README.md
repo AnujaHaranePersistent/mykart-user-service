@@ -53,6 +53,20 @@ DELETE /v1/users/delete/{user_id}      -   to delete user with given identifier
 
 
 ```
+For Cart:
+
+```bash
+
+POST /v1/users/{user_id}/cart                -   to add items to cart 
+
+GET /v1/users/{user_id}/cart/{item_id}       -   to get sprcific item from cart
+
+PUT /v1/users/{user_id}/cart/update/{item_id}         -   to update quantity of item with given identifier
+
+DELETE /v1/users/{user_id}/cart/delete/{item_id}      -   to delete item from cart with given identifier
+
+
+```
 
 
  
